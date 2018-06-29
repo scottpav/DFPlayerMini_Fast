@@ -14,7 +14,6 @@
   #define PLAY_COMMAND 0x03
   #define VOLUME_COMMAND 0x06
   #define EQ_COMMAND 0x07
-  #define LOOP_COMMAND 0x08
   #define RESUME_COMMAND 0x0D
   #define PAUSE_COMMAND 0x0E
 
@@ -41,7 +40,6 @@
       void begin(Stream& stream);
       void findChecksum();
       void volume(uint8_t volume);
-      void loop(uint16_t fileNum);
       void play(uint16_t fileNum);
       void EQSelect(uint8_t setting);
       void pause();
